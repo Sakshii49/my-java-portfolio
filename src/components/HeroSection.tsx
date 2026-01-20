@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left max-w-2xl animate-slide-up">
             <p className="text-primary font-mono text-lg mb-4">Hello, I'm</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-              <span className="gradient-text">John Doe</span>
+              <span className="gradient-text">Sakshi</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
               Senior Java Developer & Cloud Engineer

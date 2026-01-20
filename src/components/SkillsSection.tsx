@@ -2,38 +2,17 @@ const skills = {
   java: {
     title: "Java Ecosystem",
     color: "java",
-    items: [
-      { name: "Java 17+", level: 95 },
-      { name: "Spring Boot", level: 90 },
-      { name: "Spring Cloud", level: 85 },
-      { name: "Hibernate/JPA", level: 88 },
-      { name: "Maven/Gradle", level: 85 },
-      { name: "JUnit/Mockito", level: 90 },
-    ],
+    items: ["Java 17+", "Spring Boot", "Spring Cloud", "Hibernate/JPA", "Maven/Gradle", "JUnit/Mockito"],
   },
   cloud: {
     title: "Cloud Fundamentals",
     color: "cloud",
-    items: [
-      { name: "Cloud Architecture", level: 85 },
-      { name: "Microservices", level: 90 },
-      { name: "Docker", level: 88 },
-      { name: "Kubernetes", level: 80 },
-      { name: "CI/CD Pipelines", level: 85 },
-      { name: "Infrastructure as Code", level: 75 },
-    ],
+    items: ["Cloud Architecture", "Microservices", "Docker", "Kubernetes", "CI/CD Pipelines", "Infrastructure as Code"],
   },
   aws: {
     title: "AWS Services",
     color: "aws",
-    items: [
-      { name: "EC2 / ECS / EKS", level: 88 },
-      { name: "Lambda", level: 85 },
-      { name: "RDS / DynamoDB", level: 82 },
-      { name: "S3 / CloudFront", level: 90 },
-      { name: "API Gateway", level: 85 },
-      { name: "CloudWatch", level: 80 },
-    ],
+    items: ["EC2 / ECS / EKS", "Lambda", "RDS / DynamoDB", "S3 / CloudFront", "API Gateway", "CloudWatch"],
   },
 };
 
@@ -58,29 +37,20 @@ const SkillsSection = () => {
             <div key={key} className="glass-card p-6 hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <div
-                  className={`w-3 h-3 rounded-full`}
+                  className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: `hsl(var(--${category.color}))` }}
                 />
                 <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
               </div>
 
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
                 {category.items.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-sm text-muted-foreground font-mono">{skill.name}</span>
-                      <span className="text-sm text-primary font-mono">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <div
-                        className="h-full rounded-full transition-all duration-1000 ease-out"
-                        style={{
-                          width: `${skill.level}%`,
-                          background: `linear-gradient(90deg, hsl(var(--${category.color})), hsl(var(--primary)))`,
-                        }}
-                      />
-                    </div>
-                  </div>
+                  <span
+                    key={skill}
+                    className="px-3 py-2 bg-muted rounded-lg text-sm font-mono text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
