@@ -1,5 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import profilePicture from "@/assets/profile-picture.jpg";
+import ProfilePicture from "@/assets/sakshi-image.jpg";
 
 const HeroSection = () => {
   return (
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <div className="relative animate-fade-in">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 glow-effect animate-float">
               <img
-                src={profilePicture}
+                src={ProfilePicture}
                 alt="Developer Profile"
                 className="w-full h-full object-cover"
               />
@@ -32,11 +32,11 @@ const HeroSection = () => {
               <span className="gradient-text">Sakshi</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
-              Senior Java Developer & Cloud Engineer
+               Java Developer & Cloud Engineer
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               Passionate about building scalable backend systems and cloud-native applications.
-              5+ years of experience crafting robust solutions with Java, Spring Boot, and AWS.
+               crafting robust solutions with Java, Spring Boot, and AWS.
             </p>
 
             {/* CTA Buttons */}

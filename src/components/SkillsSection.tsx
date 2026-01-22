@@ -2,17 +2,17 @@ const skills = {
   java: {
     title: "Java Ecosystem",
     color: "java",
-    items: ["Java 17+", "Spring Boot", "Spring Cloud", "Hibernate/JPA", "Maven/Gradle", "JUnit/Mockito"],
+    items: ["Java ", "Spring Boot", "Spring Cloud", "Hibernate/JPA", "Maven"],
   },
   cloud: {
     title: "Cloud Fundamentals",
     color: "cloud",
-    items: ["Cloud Architecture", "Microservices", "Docker", "Kubernetes", "CI/CD Pipelines", "Infrastructure as Code"],
+    items: ["Cloud Architecture", "Microservices", "CI/CD Pipelines"],
   },
   aws: {
     title: "AWS Services",
     color: "aws",
-    items: ["EC2 / ECS / EKS", "Lambda", "RDS / DynamoDB", "S3 / CloudFront", "API Gateway", "CloudWatch"],
+    items: ["EC2 ", "Lambda", "RDS / DynamoDB", "S3 / CloudFront", "IAM"],
   },
 };
 
@@ -61,7 +61,7 @@ const SkillsSection = () => {
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-6">Also familiar with:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["PostgreSQL", "MongoDB", "Redis", "Kafka", "RabbitMQ", "Git", "Linux", "REST APIs", "GraphQL", "Terraform"].map(
+            {["PostgreSQL", "MongoDB","Git", "Linux", "REST APIs"].map(
               (skill) => (
                 <span
                   key={skill}

@@ -2,56 +2,32 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Microservices",
+    title: "Hospital Management System",
     description:
-      "A scalable e-commerce platform built with Spring Boot microservices, featuring service discovery, API gateway, and distributed tracing.",
-    tags: ["Java", "Spring Boot", "Docker", "AWS ECS", "PostgreSQL"],
-    github: "#",
-    live: "#",
+      "A hospital management system that streamlines patient care, appointment scheduling, and inventory management.",
+    tags: ["Java", "Spring Boot", "Microservices", "Spring JPA", "PostgreSQL"],
+  
     featured: true,
   },
   {
-    title: "Cloud Cost Optimizer",
+    title: "Live Corporate Website",
     description:
-      "AWS cost optimization tool that analyzes resource usage and provides recommendations to reduce cloud spending by up to 40%.",
-    tags: ["Java", "AWS Lambda", "DynamoDB", "CloudWatch", "React"],
-    github: "#",
-    live: "#",
+      "A live corporate website that showcases the company's products, services.",
+    tags: ["Javascript", "CSS3", "HTML5", "React"],
+    
     featured: true,
   },
   {
-    title: "Real-time Analytics Engine",
+    title: "Advertisement maker using AI-ML",
     description:
-      "High-throughput data processing pipeline handling millions of events per minute with sub-second latency.",
-    tags: ["Java", "Kafka", "Spark", "Redis", "Kubernetes"],
+      "An AI-ML based advertisement maker that generates personalized ads based on user behavior and preferences.",
+    tags: ["Python", "Flask", "numpy,Pandas", "ML models"],
     github: "#",
-    live: "#",
+    
     featured: true,
   },
-  {
-    title: "Payment Gateway Integration",
-    description:
-      "Secure payment processing system integrating multiple payment providers with PCI-DSS compliance.",
-    tags: ["Spring Boot", "AWS KMS", "SQS", "Stripe"],
-    github: "#",
-    featured: false,
-  },
-  {
-    title: "API Rate Limiter",
-    description:
-      "Distributed rate limiting solution using Redis for high-availability API protection.",
-    tags: ["Java", "Redis", "Spring Cloud", "Resilience4j"],
-    github: "#",
-    featured: false,
-  },
-  {
-    title: "Log Aggregation System",
-    description:
-      "Centralized logging solution processing terabytes of logs daily with full-text search capabilities.",
-    tags: ["Java", "Elasticsearch", "Logstash", "AWS S3"],
-    github: "#",
-    featured: false,
-  },
+ 
+
 ];
 
 const ProjectsSection = () => {
@@ -87,11 +63,8 @@ const ProjectsSection = () => {
                   <a href={project.github} className="text-muted-foreground hover:text-primary transition-colors">
                     <Github className="w-5 h-5" />
                   </a>
-                  {project.live && (
-                    <a href={project.live} className="text-muted-foreground hover:text-primary transition-colors">
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
-                  )}
+                  
+                
                 </div>
               </div>
 

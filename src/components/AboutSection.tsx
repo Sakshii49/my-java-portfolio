@@ -42,8 +42,7 @@ const AboutSection = () => {
           {/* Story */}
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With over 5 years of experience in software development, I specialize in 
-              building robust backend systems using Java and Spring Boot ecosystem. 
+               I specialize in building robust backend systems using Java and Spring Boot ecosystem. 
               My journey started with a fascination for how complex systems work together.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -56,21 +55,8 @@ const AboutSection = () => {
               to open-source projects, or sharing knowledge through technical blog posts.
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6">
-              <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold gradient-text">5+</p>
-                <p className="text-muted-foreground text-sm">Years Experience</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold gradient-text">50+</p>
-                <p className="text-muted-foreground text-sm">Projects Completed</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold gradient-text">20+</p>
-                <p className="text-muted-foreground text-sm">Happy Clients</p>
-              </div>
-            </div>
+            
+          
           </div>
 
           {/* Highlights Grid */}
