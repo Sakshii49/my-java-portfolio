@@ -116,7 +116,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="khatavkarsakshi414@gmail.com"
                 />
               </div>
             </div>

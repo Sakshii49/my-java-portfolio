@@ -58,21 +58,21 @@ const HeroSection = () => {
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
               <a
-                href="#"
+                href="https://github.com/Sakshii49"
                 className="p-3 glass-card hover:border-primary/50 transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5 text-muted-foreground hover:text-primary" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/sakshi-khatavkar-aa98b51b8"
                 className="p-3 glass-card hover:border-primary/50 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary" />
               </a>
               <a
-                href="mailto:john@example.com"
+                href="mailto:khatavkarsakshi414@gmail.com"
                 className="p-3 glass-card hover:border-primary/50 transition-colors"
                 aria-label="Email"
               >
